@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/material_dynamic_secondary95">
+
+    <ImageView
+        android:id="@+id/imgatas"
+        android:layout_width="427dp"
+        android:layout_height="211dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/bgatas"
+        tools:ignore="ContentDescription,ImageContrastCheck,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="101dp"
+        android:layout_height="88dp"
+        android:layout_below="@id/imgatas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-100dp"
+        android:src="@drawable/logo"
+
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imgpapuan"
+        android:layout_width="196dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/imglogo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/papuanshop"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/inputt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgpapuan"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="10.0">
+
+
+        <EditText
+            android:id="@+id/txtedit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/button_save"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Masukan username anda"
+            android:paddingStart="40dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields,TextContrastCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_save"
+            android:backgroundTint="@color/white"
+            android:hint="Masukan password anda"
+            android:inputType="textPassword"
+            android:paddingStart="40dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry,VisualLintTextFieldSize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-115dp"
+            android:src="@drawable/user"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/lock"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <!--suppress AndroidMissingOnClickHandler -->
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputt"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="-100dp"
+        android:autoLink="web"
+        android:clickable="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:onClick="onLinkClicked"
+        android:text="Lupa Password?"
+        android:textColor="@color/material_dynamic_primary0"
+        android:textColorLink="@color/design_default_color_primary_dark"
+        android:textSize="9sp"
+        tools:ignore="HardcodedText,RtlHardcoded,SmallSp,TouchTargetSizeCheck"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/link"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:width="200dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Login"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+
+    <ImageView
+        android:id="@+id/btnfb"
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_below="@id/btnlogin"
+        android:layout_marginTop="18dp"
+        android:paddingStart="70dp"
+        android:src="@drawable/fb"
+        tools:ignore="ContentDescription,DuplicateIds,RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/btnfb"
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_below="@id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:paddingStart="20dp"
+        android:src="@drawable/aple"
+        tools:ignore="ContentDescription,DuplicateIds,MissingPrefix,RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/btnfb"
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_below="@id/btnlogin"
+        android:layout_marginTop="18dp"
+        android:paddingStart="280dp"
+        android:src="@drawable/google"
+        tools:ignore="ContentDescription,DuplicateIds,MissingPrefix,RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/imgbawah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnlogin"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/bgbawah"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/forrgett"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imgbawah"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="-40dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Belum Punya Akun?"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <!--suppress AndroidDomInspection, AndroidMissingOnClickHandler -->
+    <TextView
+        android:id="@+id/creatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgbawah"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="-40dp"
+        android:autoLink="web"
+        android:clickable="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:onClick="onLinkClicked"
+        android:text="Creat Now"
+        android:textColor="@color/white"
+        android:textColorLink="@color/design_default_color_primary_variant"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,TouchTargetSizeCheck" />
+
+</RelativeLayout>

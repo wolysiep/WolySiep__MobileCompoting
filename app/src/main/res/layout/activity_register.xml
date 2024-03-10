@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_secondary95">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        tools:ignore="ContentDescription" />
+    <ImageView
+        android:id="@+id/imgatas"
+        android:layout_width="408dp"
+        android:layout_height="209dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bgatas"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/register"
+        android:layout_below="@id/imgatas"
+        android:layout_marginTop="-180dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/inputt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgatas"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="10.0">
+
+
+        <EditText
+            android:id="@+id/txtedit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/button_save"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Nama Lengkap "
+            android:paddingStart="40dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill,DuplicateIds,HardcodedText,RtlSymmetry,TextContrastCheck,TextFields,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_save"
+            android:backgroundTint="@color/white"
+            android:hint="Email/Telepon"
+            android:inputType="textPassword"
+            android:paddingStart="40dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill,DuplicateIds,HardcodedText,RtlSymmetry,VisualLintTextFieldSize,TextContrastCheck" />
+        <EditText
+            android:id="@+id/txtedit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/button_save"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Password"
+            android:layout_marginTop="15dp"
+            android:paddingStart="40dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill,DuplicateIds,HardcodedText,RtlSymmetry,TextContrastCheck,TextFields,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_save"
+            android:backgroundTint="@color/white"
+            android:hint="Ulangi Password"
+            android:inputType="textPassword"
+            android:paddingStart="40dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill,DuplicateIds,HardcodedText,RtlSymmetry,VisualLintTextFieldSize,TextContrastCheck" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-105dp"
+            android:src="@drawable/key2"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/key2"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-160dp"
+            android:src="@drawable/cloud"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-90dp"
+            android:src="@drawable/user"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnlogin"
+        tools:ignore="HardcodedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-80dp"
+        android:width="200dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Buat Sekarang"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/btnlogin"
+        android:contentDescription="TODO"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/imgshopping"
+        tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+
+
+
+</RelativeLayout>

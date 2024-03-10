@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/material_dynamic_secondary95">
+
+    <ImageView
+        android:id="@+id/imgatas"
+        android:layout_width="434dp"
+        android:layout_height="222dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-35dp"
+        android:src="@drawable/bgatas"
+        tools:ignore="ContentDescription,VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/imgshoping"
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:layout_below="@id/imgatas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="127dp"
+        android:src="@drawable/shopping"
+        tools:ignore="ContentDescription,DuplicateIds" />
+
+    <TextView
+        android:id="@+id/txtselamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgshoping"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Selamat Datang Papuan'Shop"
+        android:textSize="14sp"
+
+
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txtkonten"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtselamat"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="haiii_brooo_siss_dengan_layanan_kami_bro_bisa_belanja_dimanapun_dan_kapanpun_yang_kamu_mau_brooo_soal_harga_dan_kulitas_barang_coba_dulu_bara_cerita_broo_soalnya_harga_bersahabat_jadi_anda_puas_kami_segan"
+        tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtkonten"
+        android:layout_centerInParent="true"
+        android:width="300dp"
+        android:text="Yukkk Mulai Sekarang"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="18sp"
+        android:layout_marginTop="-20dp"
+        tools:ignore="HardcodedText" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/to_right"
+        android:layout_below="@id/btnstart"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="-38dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="174dp"
+        android:layout_below="@id/btnstart"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/carts"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kelapa"
+        android:layout_below="@id/btnstart"
+        android:layout_marginTop="-9dp"
+        android:layout_marginLeft="-150dp"
+        tools:ignore="ContentDescription,RtlHardcoded,VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/imgombak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnstart"
+        android:src="@drawable/bgbawahlest"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+
+</RelativeLayout>
